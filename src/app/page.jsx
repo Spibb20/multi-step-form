@@ -4,6 +4,7 @@ import Image from "next/image";
 import { StepOne } from "./_components/StepOne";
 import { StepTwo } from "./_components/StepTwo";
 import { StepThree } from "./_components/StepThree";
+import { Button } from "./_components/Button";
 import { useState } from "react";
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
 
   return (
     <div className="w-full h-screen bg-blue-100 flex justify-center items-center">
-      <CurrentForm />
+      <CurrentForm clickHandler={() => setFormState(FormState + 1)} />
     </div>
   );
 }
