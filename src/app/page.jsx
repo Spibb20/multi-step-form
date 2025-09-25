@@ -6,7 +6,7 @@ import { StepTwo } from "./_components/StepTwo";
 import { StepThree } from "./_components/StepThree";
 import { StepFinished } from "./_components/StepFinished";
 import { Button } from "./_components/Button";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Home() {
   const [FormState, setFormState] = useState(0);
